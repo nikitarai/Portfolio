@@ -1,0 +1,50 @@
+﻿@model PortfolioProject.Models.Portfolio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Portfolio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectScreenshot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectScreenshot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectGitLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectGitLink)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

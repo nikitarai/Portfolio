@@ -1,50 +1,138 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<PortfolioProject.Models.Portfolio>
+
+@{
+    ViewBag.Title = "Full Stack Developer";
 }
 
-<div id="main">
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="container-fluid">
+
+    @*Landing Page*@
+    <a id="home" class="smooth"></a>
+    <div id="main" class="reverse">
+        <h1 id="mainName">nikita rai</h1>
+        <h3>Full Stack Developer</h3>
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>
-    </div>
-</div>
-<div id="page1">
+
+    @*About Page*@
     <a id="about" class="smooth"></a>
-    <h1 style="padding-top:65px; margin-top:65px;">About Me</h1>
-    <p>Hi, I'm Nikita Rai, an upcoming full stack developer. My background is originally in entertainment, Film and Television. I've always been drawn to technology.</p>
-</div>
+    <div id="page1">
+        <h1 style="padding-top:65px; margin-top:65px;">About Me</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div id="bioPic">
+                </div>                
+            </div>
+            <div class="col-md-8">
+                <p id="bio">Nikita Collier is an emerging full stack developer with a strong attention to design. Collier graduated from Georgia State University with a bachelor's degree in Film and Television. Although her undergrad studies were in the media arts, she stayed connected to technology. Collier utilized her campus' "Digital Aquarium", where she taught herself how to use programs such as Adobe Creative Suite.  She found this to be her favorite place and fondest part of college. Collier started gaining experience by volunteering her design services to local small businesses and non profits. She designed websites, flyers, banners, business cards, t-shirts and even home decor. The more she helped others, the more her interest grew. A very small seed started blooming into something magical. Her personal mission is to help people discover their talents and passion and inspire them to go forward with their dreams.</p>
+                <div class="col-md-12">
+                    <h2 class="text-center">|<a style="color:#231f20" href="http://www.github.com/nikitarai" target="_blank"> View GitHub Profile</a> | </h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2 class="script">Languages</h2>
+                    <p>C# | HTML5 | CSS3 | SQL | JavaScript | jQuery</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2 class="script">Software</h2>
+                    <p>.Net | Wordpress | Git | Visual Studio</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2 class="script">Adobe</h2>
+                    <p>Illustrator | Photoshop | Premiere Pro | Dreamweaver</p>
+                </div>         
+            </div>
+        </div>
+    </div>
 
-<div id="page2">
+
+    @*What I Do Page*@
+    <a id="whatido" class="smooth"></a>
+    <div id="page2" class="reverse">
+        <h1 style="padding-top:65px; margin-top:65px;">What I Do</h1>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 vertical-center">
+                <div class="inner-container">
+                    <img src="~/Content/images/website-design-symbol.png" />
+                    <h2 class="script">Web Design</h2>
+                    <p>I enjoy developing websites, the layouts, the coding, the photography, everything.</p>
+                </div>
+            </div>
+            <div class="col-md-4 vertical-center">
+                <div class="inner-container">
+                    <img src="~/Content/images/responsive-design-symbol.png" />
+                    <h2 class="script">Software Development</h2>
+                    <p>The back end intrigues me, making a software app work is very rewarding.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 vertical-center">
+                <div class="inner-container">
+                    <img src="~/Content/images/painter-palette-and-brush-artistic-tools (1).png" />
+                    <h2 class="script">Graphic Design</h2>
+                    <p>I love my gadgets but I have to start on paper. Sketching helps me visualize my options.</p>
+                </div>
+            </div>
+            <div class="col-md-4 vertical-center">
+                <div class="inner-container">
+                    <img src="~/Content/images/presentation (1).png" />
+                    <h2 class="script">Branding</h2>
+                    <p>I find myself researching new ways to reach a target audience often.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*Portfolio Page*@
     <a id="portfolio" class="smooth"></a>
-    <h1 style="padding-top:65px; margin-top:65px;">Projects</h1>
-    Portfolio Information
-</div>
+    <div id="page3">
+        <h1 style="padding-top:65px; margin-top:65px;">Projects</h1>
+        <div class="row">
+            <div class="col-md-1"></div>
+            @foreach (var item in Model)
+            {
+                <div class="col-md-2" style="text-align:center;">
+                    <h2>@Html.DisplayFor(modelItem => item.ProjectName)</h2>
+                    <button><a style="color:#231f20" href="@Html.DisplayFor(modelItem => item.ProjectGitLink)" target="_blank">Git Link</a></button>
+                    <img src="@Url.Content(item.ProjectScreenshot)" class="img-responsive" style="min-height:150px;" />
+                    <p style="min-height:150px; margin-top:10px;">@Html.DisplayFor(modelItem => item.ProjectDescription)</p>
+                </div>
+            }
+        </div>
+    </div>
 
-<div id="page3">
+
+    @*Contact Page*@
     <a id="contact" class="smooth"></a>
-    <h1 style="padding-top:65px; margin-top:65px;">Contact Me</h1>
-    Contact Info and/or form
+    <div id="page4" class="reverse">
+        <h1 style="padding-top:65px; margin-top:65px; color:white">Contact Me</h1>
+        <div class="row">
+            <div class="inner-container">
+                <div class="col-md-4">
+                    <h4>Email</h4>
+                    <a href="mailto:nikita.collier@gmail.com?Subject=Portfolio%20Inquiry" target="_top">
+                        <img class="contactIcon" src="~/Content/images/opened-email-envelope (1).png" />
+                        <p>nikita.collier@gmail.com</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h4>GitHub</h4>
+                    <a href="http://www.github.com/nikitarai" target="_blank">
+                        <img class="contactIcon" src="~/Content/images/github-character (1).png" />
+                        <p>github.com/nikitarai</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h4>LinkedIn</h4>
+                    <a href="http://www.linkedin.com/in/nikicollier" target="_blank">
+                        <img class="contactIcon" src="~/Content/images/linkedin-logo-button (1).png" />
+                        <p>linkedin.com/in/nikicollier</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script src="~/Scripts/PortJava.js"></script>
+<link href="~/Content/Site.css" rel="stylesheet" />

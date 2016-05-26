@@ -1,22 +1,41 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.navbar-inverse{
+    background-color:#151531;
+    color:white;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.reverse{
+   color:white;
+}
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:darkgray;
+}
+
+a:visited{
+    color:lightgray;
+}
+
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
@@ -24,18 +43,116 @@ textarea {
 }
 
 #main{
-    height:1000px;
+    min-height:100vh;
+    text-align:center;
+    box-shadow: 0px 2000px rgba(21, 21, 49, 0.6) inset;
+    background-image:url(images/working-on-macbook-and-iphone-in-a-bed-picjumbo-com.jpg);
+    background-size:cover;
 }
- 
 
 #page1{
-    height:1000px;
+    min-height:100vh;    
+    background-color:#F5F3EE;
 }
 
 #page2{
-    height:1000px;
+    min-height:100vh;   
+    box-shadow: 0px 2000px rgba(0, 66, 55, 0.6) inset;
+    background-image:url(images/paper-1215551_1920.jpg);
+    background-size:cover;
+    padding-bottom:50px;
 }
 
 #page3{
-    height:1000px;
+    min-height:100vh;  
+    background-color:#F5F3EE;
+}
+
+#page4{
+    min-height:100vh;
+    box-shadow: 0px 2000px rgba(21, 21, 49, 0.6) inset;
+    background-image:url(images/computer-768696_1920.jpg);
+    background-size:cover;      
+}
+
+#mainName {
+    padding-top:200px;
+    font-size: 150px;
+    text-align:center;
+}
+
+#bio{
+    text-indent:50px;
+}
+
+#bioPic{
+    background-image:url('images/FullSizeRender (1).jpg');
+    background-size:cover;
+    min-height:350px;
+    border:1px groove white;
+}
+h1{    
+    text-align:center;
+    margin-bottom:50px;
+    font-family: 'Kaushan Script', cursive;
+    font-size:70px;
+}
+
+.script{
+    font-family: 'Kaushan Script', cursive;
+    font-size:26px;
+}
+.inner-container{
+    border:0px;
+    align-content:center;
+    padding:10px;
+    margin: auto;
+    text-align:center;
+}
+.row{
+    margin:0 auto;
+    padding-left:10%;
+    padding-right:10%;
+}
+.vertical-center{
+    align-items:center;
+    display:flex;
+}
+
+.square{
+    min-height:300px;
+}
+
+.contactIcon{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.portImg{
+    height:500px;
+}
+
+#tuscany{
+    background-image:url('images/ProjectScreenShots/TuscanyVillas.1.jpg');
+    background:left;    
+}
+
+#virtualP{
+    background-image:url('images/ProjectScreenShots/VirtualPet.1.jpg'); 
+    background:left;
+}
+
+#meetingM{
+    background-image:url('images/ProjectScreenShots/MeetingMinutes.1.jpg');    
+    background:left;
+}
+
+#fortuneT{
+    background-image:url('images/ProjectScreenShots/FortuneTeller.1.jpg');   
+    background:left;
+}
+
+#firstB{
+    background-image:url('images/ProjectScreenShots/FirstBanking.1.jpg'); 
+    background:left;
 }

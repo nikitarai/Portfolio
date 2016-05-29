@@ -19,14 +19,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nikita Rai", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               @* @Html.ActionLink("Nikita Rai", "Index", "Home", new { area = "" }, new { @class = "navbar-brand smoothScroll" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#whatido">What I Do</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="smoothScroll reverse" style="font-family:'Kaushan Script', cursive; font-size:24px;">Nikita Rai</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#whatido" class="smoothScroll">What I Do</a></li>
+                    <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -51,8 +52,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-    <script>
 
-    </script>
+    <script src="~/Scripts/smoothscroll.js"></script>
+   
 </body>
 </html>

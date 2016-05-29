@@ -161,12 +161,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Computer - 1196.mp4" />
     <Content Include="Content\images\binary-1187198_1920.jpg" />
     <Content Include="Content\images\computer-768696_1920.jpg" />
     <Content Include="Content\images\desk-931928_1920.jpg" />
     <Content Include="Content\images\FullSizeRender %281%29.jpg" />
     <Content Include="Content\images\github-character %281%29.png" />
     <Content Include="Content\images\linkedin-logo-button %281%29.png" />
+    <Content Include="Content\images\Mock-up.jpg" />
+    <Content Include="Content\images\Noted.jpg" />
     <Content Include="Content\images\opened-email-envelope %281%29.png" />
     <Content Include="Content\images\painter-palette-and-brush-artistic-tools %281%29.png" />
     <Content Include="Content\images\paper-1215551_1920.jpg" />
@@ -189,6 +192,8 @@
     <Content Include="Content\images\startup-593344_1920.jpg" />
     <Content Include="Content\images\website-design-symbol.png" />
     <Content Include="Content\images\working-on-macbook-and-iphone-in-a-bed-picjumbo-com.jpg" />
+    <Content Include="Content\Mock-up.mp4" />
+    <Content Include="Content\Noted.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -212,6 +217,8 @@
     <Content Include="Models\PortfolioModel.edmx.diagram">
       <DependentUpon>PortfolioModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\Mock-up.webm" />
+    <Content Include="Content\Noted.webm" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -226,6 +233,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\sammy-0.7.5.js" />
     <Content Include="Scripts\sammy-0.7.5.min.js" />
+    <Content Include="Scripts\smoothscroll.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

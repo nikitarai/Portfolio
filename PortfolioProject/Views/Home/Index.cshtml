@@ -7,16 +7,19 @@
 <div class="container-fluid">
 
     @*Landing Page*@
-    <a id="home" class="smooth"></a>
+    <a id="home" class="smoothScroll"></a>
     <div id="main" class="reverse">
+        <video autoplay loop poster="~/Content/images/Noted.jpg" id="bgvid">
+            <source src="~/Content/Computer - 1196.mp4" type="video/mp4">
+        </video>
         <h1 id="mainName">nikita rai</h1>
         <h3>Full Stack Developer</h3>
     </div>
-
+    
 
     @*About Page*@
-    <a id="about" class="smooth"></a>
-    <div id="page1">
+    
+    <div id="page1"><a id="about" class="smoothScroll"></a>
         <h1 style="padding-top:65px; margin-top:65px;">About Me</h1>
         <div class="row">
             <div class="col-md-4">
@@ -46,8 +49,8 @@
 
 
     @*What I Do Page*@
-    <a id="whatido" class="smooth"></a>
-    <div id="page2" class="reverse">
+    
+    <div id="page2" class="reverse"><a id="whatido" class="smoothScroll"></a>
         <h1 style="padding-top:65px; margin-top:65px;">What I Do</h1>
         <div class="row">
             <div class="col-md-4 col-md-offset-2 vertical-center">
@@ -85,8 +88,8 @@
 
 
     @*Portfolio Page*@
-    <a id="portfolio" class="smooth"></a>
-    <div id="page3">
+    
+    <div id="page3"><a id="portfolio" class="smoothScroll"></a>
         <h1 style="padding-top:65px; margin-top:65px;">Projects</h1>
         <div class="row">
             <div class="col-md-1"></div>
@@ -104,8 +107,8 @@
 
 
     @*Contact Page*@
-    <a id="contact" class="smooth"></a>
-    <div id="page4" class="reverse">
+    
+    <div id="page4" class="reverse"><a id="contact" class="smoothScroll"></a>
         <h1 style="padding-top:65px; margin-top:65px; color:white">Contact Me</h1>
         <div class="row">
             <div class="inner-container">
@@ -134,5 +137,5 @@
         </div>
     </div>
 </div>
-<script src="~/Scripts/PortJava.js"></script>
+
 <link href="~/Content/Site.css" rel="stylesheet" />

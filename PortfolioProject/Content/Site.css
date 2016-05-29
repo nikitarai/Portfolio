@@ -22,6 +22,8 @@
 
 a{
     color:white;
+    padding:0px;
+    margin:0px;
 }
 
 a:hover{
@@ -46,8 +48,7 @@ textarea {
     min-height:100vh;
     text-align:center;
     box-shadow: 0px 2000px rgba(21, 21, 49, 0.6) inset;
-    background-image:url(images/working-on-macbook-and-iphone-in-a-bed-picjumbo-com.jpg);
-    background-size:cover;
+    overflow:hidden;
 }
 
 #page1{
@@ -155,4 +156,31 @@ h1{
 #firstB{
     background-image:url('images/ProjectScreenShots/FirstBanking.1.jpg'); 
     background:left;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(images/Noted.jpg) no-repeat;
+    background-size: cover; 
+    
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(images/Mock-up.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }
